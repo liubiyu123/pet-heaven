@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand';
+}
+
+:root {
+  --mainColor: #fe5b3d;
+  --secondayColor: #ffac38;;
+  --textColor: #444;
+  --gradient1: linear-gradient(#fe5b3d, #ffac38);
+  --white: hsl(0, 0%, 100%);
+  --alice-blue-2: hsl(216, 75%, 97%);
+  --alice-blue-3: hsl(216, 38%, 95%);
+  --gradient: linear-gradient(to top, var(--alice-blue-2), var(--alice-blue-3));
+}
+
+/* Nav css */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 2rem;
+  background-color: var(--white);
+  color: var(--textColor);
+}
+header h3 {
+  color: #fe5b3d;
+}
+nav a {
+  margin: 0 2rem;
+  color: var(--textColor);
+  text-decoration: none;
+}
+
+nav a:hover {
+  color:var(--secondayColor);
+}
+
+header .nav-btn {
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--textColor);
+  visibility: hidden;
+  opacity: 0;
+  font-size: 1.3rem;
+}
+
+header .btn {
+  border: none;
+  outline: none;
+}
+
+/* Home */
+.home {
+  min-height: 50vh;
+  height: 300px;
+  background: url(./img/background.jpg);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+}
+
+.title {
+  padding-top: 100px;
+  margin-left: 50px;
+  color: var(--white);
+  text-shadow: 0 0 7px;
+}
+
+/* home adopt sec */
+.adoptions_container h1 {
+  padding-top: 20px;
+  text-align: center;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: var(--mainColor);
+}
+.adoptions {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.adoptions .box {
+  text-align: center;
+  padding: 20px;
+}
+
+.adoptions .box.dog {
+  background: url(./img/bg_dog.jpg);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+}
+
+.adoptions .box.cat {
+  background: url(./img/bg_cat.jpg);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+}
+
+.adoptions .box a {
+  opacity: initial;
+  color: var(--mainColor);
+  text-shadow: 0 0 7px;
+  text-decoration: none;
+}
+.adoptions .box:hover{
+  opacity: 0.6;
+}
+/* about home */
+.header {
+  padding-top: 20px;
+  text-align: center;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: var(--mainColor);
+}
+.about_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 2rem;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.about_container img {
+  width: 100%;
+}
+
+.about-text h3 {
+  font-weight: 500;
+  color: var(--mainColor);
+  text-transform: uppercase;
+}
+
+.about-text p {
+  margin: 0.5rem 0 1.4rem;
+}
+
+/* dog list */
+.dog-list h2 {
+  padding-top: 20px;
+  text-align: center;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: var(--mainColor);
+}
+
+.dogs{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  margin: 2rem;
+}
+
+.dog-card {
+  padding: 10px;
+  box-shadow: 1px 4px 41px rgba(0, 0, 0, 0.1);
+}
+
+.dog-card .img-box {
+  width: 100%;
+  height: 200px;
+}
+
+.dog-card .img-box img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.dog-card h4{
+  font-size: 1.1rem;
+  color: var(--textColor);
+}
+
+/* home adopt sec */
+.dog-detail h2 {
+  padding-top: 20px;
+  text-align: center;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: var(--mainColor);
+}
+
+.dog-section{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 2rem;
+  padding: 10px;
+  box-shadow: 1px 4px 41px rgba(0, 0, 0, 0.1);
+}
+
+.dog-detail .img-box {
+  width: 100%;
+  height: 400px;
+}
+
+.dog-detail .img-box img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.dog-detail h3{
+  font-size: 1.5rem;
+  color: var(--mainColor);
+}
+
+.dog-detail p{
+  font-size: 1.1rem;
+  color: var(--textColor);
+}
+
+/* Adoption Form */
+.adoption-container h2 {
+  padding-top: 20px;
+  text-align: center;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: var(--mainColor);
+}
+
+.adoption-container p {
+  text-align: center;
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--textColor);
+}
+
+.form {
+  gap: 1rem;
+  margin: 1rem 6rem;
+  padding: 20px;
+  box-shadow: 1px 4px 41px rgba(0, 0, 0, 0.1);
+}
+
+/* Release Form */
+.release-container h2 {
+  padding-top: 20px;
+  text-align: center;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: var(--mainColor);
+}
+
+.release-container p {
+  text-align: center;
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--textColor);
+}
+
+/* about section */
+.about-section h2{
+  padding-top: 20px;
+  text-align: center;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: var(--mainColor);
+}
+
+.about-section .main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 2rem;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.about-section img {
+  width: 100%;
+}
+
+.about-section .text h3 {
+  font-weight: 500;
+  color: var(--mainColor);
+  text-transform: uppercase;
+}
+
+.about-section .text p {
+  margin: 0.5rem 0 1.4rem;
+}
+
+/* login */
+.login-container {
+  gap: 1rem;
+  width: 400px;
+  margin: auto;
+  padding: 20px;
+  box-shadow: 1px 4px 41px rgba(0, 0, 0, 0.1);
+}
+
+.login-input {
+  text-align: center;
+}
+
+.login-input h1 {
+  padding-top: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: var(--mainColor);
+}
+
+.login-input .btn {
+  margin-top: 10px;
+}
+
+
+
+
+/* responsive */
+@media screen and (max-width: 1024px) {
+  header .nav-btn {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: var(--mainColor);
+    transition: 1s;
+    transform: translateY(-100vh);
+  }
+
+  header .responsive_nav {
+    transform: none;
+  }
+
+  nav .nav-close-btn {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+
+  nav a {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .dogs{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .title {
+    padding-top: 50px;
+  }
+  .home .title h2 {
+    font-size: 1.5rem;
+  }
+  .home .title p {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .dogs{
+    grid-template-columns: 1fr;
+  }
+  .form {
+    margin: 1rem 2rem;
+  }
+  .login-container {
+    width: 250px;
+  }
+}
