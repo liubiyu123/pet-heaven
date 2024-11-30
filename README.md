@@ -30,10 +30,10 @@ To get started with the project, follow the steps below:
   ```bash
   cd stray-animal-welfare
 
-3.Install the necessary dependencies:
+3. Install the necessary dependencies:
   ```bash
   npm install
 
-4.Start the development server:
+4. Start the development server:
   ```bash
   npm start
