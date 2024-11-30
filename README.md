@@ -33,7 +33,7 @@ To get started with the project, follow the steps below:
 3. Install the necessary dependencies:
   ```bash
   npm install
-
+  
 4. Start the development server:
   ```bash
   npm start
